@@ -1,0 +1,60 @@
+users
+    pk | int
+    email | varchar
+
+students
+    pk | int
+
+teachers
+    pk | int
+    
+profile
+    pk | int
+    fk | studentid
+    first name | varchar
+    last name | varchar
+    phone | varchar
+    address | varchar
+    city | varchar
+    state | varchar
+    zip | varchar
+    github | varchar
+    age | int
+
+
+time in/time out
+    pk | int
+    fk | studentid
+    date | date
+    time in | timestamp
+    time out | timestamp
+
+courses
+    pk | int
+    category | varchar
+    teacher | varchar
+    start date | date
+    end date | date
+    class open | bool
+    enrolled | int
+
+classes
+    pk | int
+    fk | studentid
+    fk | courseid
+
+grades
+    pk | int
+    fk student | int
+    fk courses | int
+
+equipment
+    pk | int
+    brand | varchar
+    cost | decimal
+    donated | bool
+
+equipment assignment
+    pk | int
+    fk student | int
+    fk course | int

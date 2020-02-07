@@ -1,0 +1,5 @@
+1. flat file databases
+
+2. heirarchical databases
+
+3. relational databases
